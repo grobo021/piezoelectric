@@ -79,9 +79,9 @@ $(() => {
             }, "slow");
         }
 
-        if (checkVisible(document.getElementById("aicomponents"))) {
-            $("*#aicomponentleft").fadeIn("slow");
-            $("*#aicomponentright").fadeIn("slow");
+        if (checkVisible(document.getElementById("components"))) {
+            $("*#componentleft").fadeIn("slow");
+            $("*#componentright").fadeIn("slow");
         }
 
         if (checkVisible(document.getElementById("statistics"))) {

@@ -128,12 +128,12 @@ body {
 	color: teal;
 	width: 140px;
 }
-.aicomponent:hover {
+.component:hover {
 	border-radius: 50px;
 	border: 3px solid red;
 }
 
-.aicomponent:hover {
+.component:hover {
 	border: 3px double red;
 }
 
@@ -229,7 +229,7 @@ body {
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: teal;
+	background-color: #FF0000;
 	color: white;
 	cursor: pointer;
 	padding: 15px;
@@ -301,7 +301,7 @@ body {
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
 	background: none;
-	color: teal;
+	color: #FF0000;
 	border: none;
 	cursor: pointer;
 	opacity: 0.8;
@@ -350,3 +350,25 @@ body {
 .open-button:hover {
 	opacity: 1;
 }
+
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/bulb-bg.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .overlay {
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  </style>
