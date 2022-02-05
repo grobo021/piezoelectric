@@ -371,4 +371,12 @@ body {
     z-index: 2;
     cursor: pointer;
   }
+
+  .overlay-internal {
+    background-color: rgba(0,0,0,0.3);
+    color: #000000;
+    z-index: 2;
+    cursor: pointer;
+    
+  }
   </style>
