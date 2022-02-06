@@ -111,13 +111,16 @@ body {
 	display: block;
 	width: 200px;
 }
+.smalltext a{
+    text-decoration: none;
+}
 .greyTitle {
 	color: #383c41;
 }
-.tealtext {
+.redtext {
 	font-size: 0.8em;
 	text-align: justify;
-	color: teal;
+	color: red;
 }
 .graytext {
 	font-size: 0.8em;
@@ -125,7 +128,7 @@ body {
 	color: #404040;
 }
 .headingtealtext {
-	color: teal;
+	color: red;
 	width: 140px;
 }
 .component:hover {
@@ -158,7 +161,7 @@ body {
 	color: white;
 }
 .footerText {
-	color: teal;
+	color: red;
 }
 .footerWhiteText {
 	color: aliceblue;
@@ -240,21 +243,21 @@ body {
 	background-color: #555;
 }
 
-/* Image gallery */
-.gallery {
+/* Image internal-images */
+.internal-images {
 	float: left;
-	width: 300px;
+	width: 500px;
 	margin-left: 40px;
 	margin-bottom: 10px;
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 50px;
 }
-.gallery:hover {
+.internal-images:hover {
 	border: 1px dotted black;
 }
 
-.gallery img {
+.internal-images img {
 	width: 100%;
 	height: auto;
 	border-radius: 50px;
@@ -266,7 +269,7 @@ body {
 	text-align: center;
 	text-transform: capitalize;
 }
-/* Image gallery */
+/* Image internal-images */
 .outdesc {
 	font: 10px;
 	color: black;
@@ -274,7 +277,7 @@ body {
 	text-transform: capitalize;
 	font-weight: bold;
 }
-.outgallery {
+.outinternal-images {
 	float: left;
 	width: 180px;
 	margin-left: 10px;
@@ -283,14 +286,14 @@ body {
 	border: 1px solid #ccc;
 	border-radius: 20px;
 }
-.outgallery:hover {
+.outinternal-images:hover {
 	border: 1px dotted black;
 }
-.outgallery a:link {
+.outinternal-images a:link {
 	text-decoration: none;
 }
 
-.outgallery img {
+.outinternal-images img {
 	width: 100%;
 	height: auto;
 	border-radius: 20px;

@@ -22,6 +22,11 @@ class Footer extends HTMLElement {
 						<h5 class="text-uppercase footerWhiteText">Links</h5>
 
 						<ul class="list-unstyled">
+                        <li>
+								<a href="../index.html" class="footerLinks">
+									Home
+								</a>
+							</li>
 							<li>
 								<a href="../index.html#features" class="footerLinks">
 									Features
@@ -38,6 +43,14 @@ class Footer extends HTMLElement {
 									class="footerLinks"
 								>
 									How it Works?
+								</a>
+							</li>
+                            <li>
+								<a
+									href="../pages/faq.html"
+									class="footerLinks"
+								>
+									FAQ
 								</a>
 							</li>
 							<li>

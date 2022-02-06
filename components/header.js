@@ -53,6 +53,13 @@ class Header extends HTMLElement {
 									>How it works?</a
 								>
 							</li>
+                            <li class="nav-item">
+								<a
+									class="nav-link"
+									href="../pages/faq.html"
+									>FAQ</a
+								>
+							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="../pages/contact.html"
 									>Contact Us</a
