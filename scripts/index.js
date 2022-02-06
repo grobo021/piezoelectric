@@ -3,19 +3,11 @@ $(() => {
     const topButton = document.getElementById("scrollBtn");
     const chatButton = document.getElementById("openForm");
 
-    const showTopButton = () => {
+    const showElementOnScroll = (element) => {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            topButton.style.display = "block";
+            element.style.display = "block";
         } else {
-            topButton.style.display = "none";
-        }
-    };
-
-    const showChatButton = () => {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            chatButton.style.display = "block";
-        } else {
-            chatButton.style.display = "none";
+            element.style.display = "none";
         }
     }
 
@@ -52,29 +44,25 @@ $(() => {
     };
 
     window.onscroll = () => {
-        showTopButton();
-        showChatButton();
+        showElementOnScroll(topButton);
+        showElementOnScroll(chatButton);
 
         if (mobileCheck()) {
-            $("#componentsofai").hide();
-            $("#componentsofaimobile").show();
-            $("#statistics").hide();
-            $("#procons").hide();
-            $("#procons-mobile").show();
+            $("#components").hide();
+            $("#componentsmobile").show();
+            $("#countries").hide();
         } else {
-            $("#componentsofai").show();
-            $("#componentsofaimobile").hide();
-            $("#statistics").show();
-            $("#procons").show();
-            $("#procons-mobile").hide();
+            $("#components").show();
+            $("#componentsmobile").hide();
+            $("#countries").show();
         }
 
-        if ((checkVisible(document.getElementById("definition")) && checkVisible(document.getElementById("drone"))) && !mobileCheck()) {
+        if ((checkVisible(document.getElementById("definition")) && checkVisible(document.getElementById("sensor"))) && !mobileCheck()) {
             $("#definition").animate({
                 left: "50%",
             }, "slow");
 
-            $("#drone").animate({
+            $("#sensor").animate({
                 left: "-40%",
             }, "slow");
         }
@@ -82,10 +70,6 @@ $(() => {
         if (checkVisible(document.getElementById("components"))) {
             $("*#componentleft").fadeIn("slow");
             $("*#componentright").fadeIn("slow");
-        }
-
-        if (checkVisible(document.getElementById("statistics"))) {
-            $("*#aniNum").addClass("ani-num");
         }
     };
 });

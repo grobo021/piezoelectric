@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html,
 body {
-    overflow-x: hidden;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 @keyframes moveRight {
@@ -30,22 +32,6 @@ body {
 
 .moveRightLong {
 	animation: moveRightLong 10s forwards;
-}
-
-@keyframes moveLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(20%);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0%);
-	}
-}
-
-.moveLeft {
-	animation: moveLeft 5s forwards;
 }
 
 @keyframes dropIn {
@@ -111,26 +97,21 @@ body {
 	display: block;
 	width: 200px;
 }
-.smalltext a{
-    text-decoration: none;
+
+.smalltext a {
+	text-decoration: none;
 }
+
 .greyTitle {
 	color: #383c41;
 }
-.redtext {
-	font-size: 0.8em;
-	text-align: justify;
-	color: red;
-}
-.graytext {
+
+.greyText {
 	font-size: 0.8em;
 	text-align: justify;
 	color: #404040;
 }
-.headingtealtext {
-	color: red;
-	width: 140px;
-}
+
 .component:hover {
 	border-radius: 50px;
 	border: 3px solid red;
@@ -140,28 +121,13 @@ body {
 	border: 3px double red;
 }
 
-.readmore {
-	text-decoration: none;
-	font-weight: bold;
-}
-
-.readmore:visited {
-	color: #660f75;
-}
-
-.readmore:hover {
-	color: #212529;
-}
-
 .page-footer {
 	background-color: #212529;
 }
-.footer-copyright {
+
+.footerCopyright {
 	background-color: #000000;
 	color: white;
-}
-.footerText {
-	color: red;
 }
 .footerWhiteText {
 	color: aliceblue;
@@ -179,18 +145,6 @@ body {
 	text-decoration: underline;
 }
 
-@property --num {
-	syntax: '<integer>';
-	initial-value: 0;
-	inherits: false;
-}
-
-#aniNum {
-	counter-reset: num var(--num);
-	font: 800 40px system-ui;
-	color: white;
-}
-
 @media (prefers-reduced-motion: no-preference) {
 	.ani-num {
 		animation: counter 5s forwards ease-in-out;
@@ -201,21 +155,21 @@ body {
 	}
 }
 
-@keyframes counter {
-	from {
-		--num: 0;
-	}
-	to {
-		--num: var(--finalNum);
-	}
-}
-
 .internal-header {
 	background-attachment: fixed;
 	height: 300px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	text-align: center;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.internal-title {
+	color: black;
+	font-size: 10vw;
+	text-shadow: 5px 2px 7px red;
+	font-family: poppins;
 }
 
 .overlay {
@@ -232,7 +186,7 @@ body {
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: #FF0000;
+	background-color: #ff0000;
 	color: white;
 	cursor: pointer;
 	padding: 15px;
@@ -304,7 +258,7 @@ body {
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
 	background: none;
-	color: #FF0000;
+	color: #ff0000;
 	border: none;
 	cursor: pointer;
 	opacity: 0.8;
@@ -333,7 +287,7 @@ body {
 
 /* Set a style for the submit/send button */
 .form-container .btn {
-	background-color: #FF0000;
+	background-color: #ff0000;
 	color: white;
 	padding: 16px 20px;
 	border: none;
@@ -354,32 +308,29 @@ body {
 	opacity: 1;
 }
 
-
 .parallax {
-    /* The image used */
-    background-image: url("../images/bulb-bg.jpg");
-  
-    /* Set a specific height */
-    min-height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+	/* The image used */
+	background-image: url('../images/bulb-bg.jpg');
 
-  .overlay {
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
-  }
+	/* Set a specific height */
+	min-height: 500px;
 
-  .overlay-internal {
-    background-color: rgba(0,0,0,0.3);
-    color: #000000;
-    z-index: 2;
-    cursor: pointer;
-    
-  }
-  </style>
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+	cursor: pointer;
+}
+
+.overlay-internal {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #000000;
+	z-index: 2;
+	cursor: pointer;
+}

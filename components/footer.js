@@ -66,7 +66,7 @@ class Footer extends HTMLElement {
 				</div>
 			</div>
 
-			<div class="footer-copyright text-center py-3">
+			<div class="footerCopyright text-center py-3">
 				<p id="copyright" style="text-align: center"></p>
 			</div>
 		</footer>
